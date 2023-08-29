@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms (III)</title>
+    </head>
+    <body>
+        <h1>Heading one</h1>
+        <form action="/server.php" method="get">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username"><br><br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"><br><br>
+            <label for="email">Emailingiz:</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="sana">Tug'ilgan sanangiz:</label>
+            <input type="date" name="date" id="sana"><br><br>
+            <label for="bakalavr">Bakalavr</label>
+            <input type="checkbox" name="check_bakalavr" id="bakalavr">
+            <label for="magistr">Magistr</label>
+            <input type="checkbox" name="check_magistr" id="magistr"><br><br>
+            <hr>
+            <p>Uylanganmisiz?</p>
+            <label for="married">Uylanganman</label>
+            <input type="radio" name="married" value="uylanganman">
+            <label for="not_married">Uylanmaganman</label>
+            <input type="radio" name="married" id="not_married"><br><br>
+            <label for="passport">Shaxsni tasdiqlovchi hujjat:</label>
+            <input type="file" name="passport" id="passport"><br><br>
+            <hr>
+            <label for="tajriba">Tajribangiz (yil):</label>
+            <select name="experiebce" id="tajriba">
+                <option value="0">Tajribam yo'q</option>
+                <option value="1">Tajribam bir yildan kam</option>
+                <option value="2">Tajribam bir yildan ko'proq</option>
+            </select><br><br>
+            <label for="haqida">O'zingiz haqingizda qo'shimcha ma'lumotlar:</label><br>
+            <textarea name="about" id="haqida" cols="40" rows="10"></textarea><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
